@@ -1,0 +1,18 @@
+<div class="toolbar">
+    <div class="inline" (click)="changeFontStyle('bold')">Bold</div>
+    <div class="inline"  (click)="changeFontStyle('italic')">Italic</div>
+    <div class="inline"  (click)="changeFontStyle('underline')">Underline</div>
+    <div class="inline">
+        <select (change)="fontChanged(select.value)" #select>
+            <option [value]="11">11 px</option>
+            <option [value]="12">12 px</option>
+            <option [value]="13">13 px</option>
+            <option [value]="14">14 px</option>
+            <option [value]="10">10 px</option>
+            <option [value]="15">15 px</option>
+            <option [value]="16">16 px</option>
+            <option [value]="17">17 px</option>
+            <option [value]="18">18 px</option>
+        </select>
+    </div>
+</div>
